@@ -84,6 +84,12 @@ public class CityList {
      * @return int
      */
     public int countCitiesInProvince(String pname) {
-        return 0;
+        int c = 0;
+        for (City city: cities) {
+            if (city.getProvinceName() == pname){
+                c++;
+            }
+        }
+        return c;
     }
 }
